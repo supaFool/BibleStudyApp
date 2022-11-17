@@ -52,6 +52,8 @@
     <Compile Include="BibleBuddyForm.Designer.cs">
       <DependentUpon>BibleBuddyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\Data\User.cs" />
+    <Compile Include="Core\Logic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BibleBuddyForm.resx">
@@ -80,7 +82,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
     <Folder Include="Internal\" />
     <Folder Include="Resources\" />
   </ItemGroup>
