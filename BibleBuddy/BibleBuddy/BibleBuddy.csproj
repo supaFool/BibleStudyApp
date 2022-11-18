@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,7 +55,7 @@
     <Compile Include="BibleBuddyForm.Designer.cs">
       <DependentUpon>BibleBuddyForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Core\Data\User.cs" />
+    <Compile Include="Core\Book.cs" />
     <Compile Include="Core\Logic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +71,73 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Core\Data\Bible-kjv-master\1Chronicles.json" />
+    <None Include="Core\Data\Bible-kjv-master\1Corinthians.json" />
+    <None Include="Core\Data\Bible-kjv-master\1John.json" />
+    <None Include="Core\Data\Bible-kjv-master\1Kings.json" />
+    <None Include="Core\Data\Bible-kjv-master\1Peter.json" />
+    <None Include="Core\Data\Bible-kjv-master\1Samuel.json" />
+    <None Include="Core\Data\Bible-kjv-master\1Thessalonians.json" />
+    <None Include="Core\Data\Bible-kjv-master\1Timothy.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Chronicles.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Corinthians.json" />
+    <None Include="Core\Data\Bible-kjv-master\2John.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Kings.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Peter.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Samuel.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Thessalonians.json" />
+    <None Include="Core\Data\Bible-kjv-master\2Timothy.json" />
+    <None Include="Core\Data\Bible-kjv-master\3John.json" />
+    <None Include="Core\Data\Bible-kjv-master\Acts.json" />
+    <None Include="Core\Data\Bible-kjv-master\Amos.json" />
+    <None Include="Core\Data\Bible-kjv-master\Colossians.json" />
+    <None Include="Core\Data\Bible-kjv-master\Daniel.json" />
+    <None Include="Core\Data\Bible-kjv-master\Deuteronomy.json" />
+    <None Include="Core\Data\Bible-kjv-master\Ecclesiastes.json" />
+    <None Include="Core\Data\Bible-kjv-master\Ephesians.json" />
+    <None Include="Core\Data\Bible-kjv-master\Esther.json" />
+    <None Include="Core\Data\Bible-kjv-master\Exodus.json" />
+    <None Include="Core\Data\Bible-kjv-master\Ezekiel.json" />
+    <None Include="Core\Data\Bible-kjv-master\Ezra.json" />
+    <None Include="Core\Data\Bible-kjv-master\Galatians.json" />
+    <None Include="Core\Data\Bible-kjv-master\Genesis.json" />
+    <None Include="Core\Data\Bible-kjv-master\Habakkuk.json" />
+    <None Include="Core\Data\Bible-kjv-master\Haggai.json" />
+    <None Include="Core\Data\Bible-kjv-master\Hebrews.json" />
+    <None Include="Core\Data\Bible-kjv-master\Hosea.json" />
+    <None Include="Core\Data\Bible-kjv-master\Isaiah.json" />
+    <None Include="Core\Data\Bible-kjv-master\James.json" />
+    <None Include="Core\Data\Bible-kjv-master\Jeremiah.json" />
+    <None Include="Core\Data\Bible-kjv-master\Job.json" />
+    <None Include="Core\Data\Bible-kjv-master\Joel.json" />
+    <None Include="Core\Data\Bible-kjv-master\John.json" />
+    <None Include="Core\Data\Bible-kjv-master\Jonah.json" />
+    <None Include="Core\Data\Bible-kjv-master\Joshua.json" />
+    <None Include="Core\Data\Bible-kjv-master\Jude.json" />
+    <None Include="Core\Data\Bible-kjv-master\Judges.json" />
+    <None Include="Core\Data\Bible-kjv-master\Lamentations.json" />
+    <None Include="Core\Data\Bible-kjv-master\Leviticus.json" />
+    <None Include="Core\Data\Bible-kjv-master\Luke.json" />
+    <None Include="Core\Data\Bible-kjv-master\Malachi.json" />
+    <None Include="Core\Data\Bible-kjv-master\Mark.json" />
+    <None Include="Core\Data\Bible-kjv-master\Matthew.json" />
+    <None Include="Core\Data\Bible-kjv-master\Micah.json" />
+    <None Include="Core\Data\Bible-kjv-master\Nahum.json" />
+    <None Include="Core\Data\Bible-kjv-master\Nehemiah.json" />
+    <None Include="Core\Data\Bible-kjv-master\Numbers.json" />
+    <None Include="Core\Data\Bible-kjv-master\Obadiah.json" />
+    <None Include="Core\Data\Bible-kjv-master\Philemon.json" />
+    <None Include="Core\Data\Bible-kjv-master\Philippians.json" />
+    <None Include="Core\Data\Bible-kjv-master\Proverbs.json" />
+    <None Include="Core\Data\Bible-kjv-master\Psalms.json" />
+    <None Include="Core\Data\Bible-kjv-master\Revelation.json" />
+    <None Include="Core\Data\Bible-kjv-master\Romans.json" />
+    <None Include="Core\Data\Bible-kjv-master\Ruth.json" />
+    <None Include="Core\Data\Bible-kjv-master\SongofSolomon.json" />
+    <None Include="Core\Data\Bible-kjv-master\Titus.json" />
+    <None Include="Core\Data\Bible-kjv-master\Zechariah.json" />
+    <None Include="Core\Data\Bible-kjv-master\Zephaniah.json" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

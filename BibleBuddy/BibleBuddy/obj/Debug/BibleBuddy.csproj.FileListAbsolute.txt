@@ -1,11 +1,14 @@
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\bin\Debug\BibleBuddy.exe.config
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\bin\Debug\BibleBuddy.exe
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\bin\Debug\BibleBuddy.pdb
+C:\BibleStudyApp\BibleBuddy\BibleBuddy\bin\Debug\Newtonsoft.Json.dll
+C:\BibleStudyApp\BibleBuddy\BibleBuddy\bin\Debug\Newtonsoft.Json.xml
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.csproj.AssemblyReference.cache
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.csproj.SuggestedBindingRedirects.cache
+C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.BibleBuddyForm.resources
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.Properties.Resources.resources
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.csproj.GenerateResource.cache
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.csproj.CoreCompileInputs.cache
+C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.csproj.CopyComplete
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.exe
 C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.pdb
-C:\BibleStudyApp\BibleBuddy\BibleBuddy\obj\Debug\BibleBuddy.BibleBuddyForm.resources

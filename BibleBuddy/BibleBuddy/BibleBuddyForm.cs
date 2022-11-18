@@ -16,7 +16,16 @@ namespace BibleBuddy
 
         private void BibleBuddyForm_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void toolStripProgressBar1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            _logic = new Logic();
         }
     }
 }
