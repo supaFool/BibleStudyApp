@@ -55,8 +55,10 @@
     <Compile Include="BibleBuddyForm.Designer.cs">
       <DependentUpon>BibleBuddyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\BibleVersions\KJV.cs" />
     <Compile Include="Core\Book.cs" />
     <Compile Include="Core\Logic.cs" />
+    <Compile Include="Core\TextHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BibleBuddyForm.resx">
