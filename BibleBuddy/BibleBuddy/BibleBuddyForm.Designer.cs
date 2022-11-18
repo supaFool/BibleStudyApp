@@ -28,86 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AppWrapper = new System.Windows.Forms.ToolStripContainer();
-            this.Panel_View = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.AppWrapper.BottomToolStripPanel.SuspendLayout();
-            this.AppWrapper.ContentPanel.SuspendLayout();
-            this.AppWrapper.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.Menu = new System.Windows.Forms.TabControl();
+            this.KJV_Tab = new System.Windows.Forms.TabPage();
+            this.Profile_Tab = new System.Windows.Forms.TabPage();
+            this.OnlineSearch_Tab = new System.Windows.Forms.TabPage();
+            this.WebBrowser = new System.Windows.Forms.WebBrowser();
+            this.BibleLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.Kjv_Label_BookTitle = new System.Windows.Forms.Label();
+            this.Kjv_Label_Chapter = new System.Windows.Forms.Label();
+            this.Kjv_Label_VerseText = new System.Windows.Forms.Label();
+            this.Menu.SuspendLayout();
+            this.KJV_Tab.SuspendLayout();
+            this.OnlineSearch_Tab.SuspendLayout();
+            this.BibleLayout.SuspendLayout();
             this.SuspendLayout();
             // 
-            // AppWrapper
+            // Menu
             // 
+            this.Menu.Controls.Add(this.KJV_Tab);
+            this.Menu.Controls.Add(this.Profile_Tab);
+            this.Menu.Controls.Add(this.OnlineSearch_Tab);
+            this.Menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Menu.Location = new System.Drawing.Point(0, 0);
+            this.Menu.Name = "Menu";
+            this.Menu.SelectedIndex = 0;
+            this.Menu.Size = new System.Drawing.Size(800, 450);
+            this.Menu.TabIndex = 0;
             // 
-            // AppWrapper.BottomToolStripPanel
+            // KJV_Tab
             // 
-            this.AppWrapper.BottomToolStripPanel.Controls.Add(this.statusStrip1);
+            this.KJV_Tab.BackColor = System.Drawing.Color.Transparent;
+            this.KJV_Tab.Controls.Add(this.BibleLayout);
+            this.KJV_Tab.Location = new System.Drawing.Point(4, 29);
+            this.KJV_Tab.Name = "KJV_Tab";
+            this.KJV_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.KJV_Tab.Size = new System.Drawing.Size(792, 417);
+            this.KJV_Tab.TabIndex = 0;
+            this.KJV_Tab.Text = "KJV";
             // 
-            // AppWrapper.ContentPanel
+            // Profile_Tab
             // 
-            this.AppWrapper.ContentPanel.Controls.Add(this.Panel_View);
-            this.AppWrapper.ContentPanel.Size = new System.Drawing.Size(800, 393);
-            this.AppWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AppWrapper.Location = new System.Drawing.Point(0, 0);
-            this.AppWrapper.Name = "AppWrapper";
-            this.AppWrapper.Size = new System.Drawing.Size(800, 450);
-            this.AppWrapper.TabIndex = 1;
-            this.AppWrapper.Text = "Container";
+            this.Profile_Tab.Location = new System.Drawing.Point(4, 29);
+            this.Profile_Tab.Name = "Profile_Tab";
+            this.Profile_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Profile_Tab.Size = new System.Drawing.Size(792, 417);
+            this.Profile_Tab.TabIndex = 1;
+            this.Profile_Tab.Text = "Profile";
             // 
-            // Panel_View
+            // OnlineSearch_Tab
             // 
-            this.Panel_View.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_View.Location = new System.Drawing.Point(0, 0);
-            this.Panel_View.Name = "Panel_View";
-            this.Panel_View.Size = new System.Drawing.Size(800, 393);
-            this.Panel_View.TabIndex = 0;
+            this.OnlineSearch_Tab.AutoScroll = true;
+            this.OnlineSearch_Tab.Controls.Add(this.WebBrowser);
+            this.OnlineSearch_Tab.Location = new System.Drawing.Point(4, 29);
+            this.OnlineSearch_Tab.Name = "OnlineSearch_Tab";
+            this.OnlineSearch_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.OnlineSearch_Tab.Size = new System.Drawing.Size(792, 417);
+            this.OnlineSearch_Tab.TabIndex = 2;
+            this.OnlineSearch_Tab.Text = "Online Search";
+            this.OnlineSearch_Tab.UseVisualStyleBackColor = true;
             // 
-            // statusStrip1
+            // WebBrowser
             // 
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 0);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 32);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
+            this.WebBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WebBrowser.Location = new System.Drawing.Point(3, 3);
+            this.WebBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.WebBrowser.Name = "WebBrowser";
+            this.WebBrowser.ScriptErrorsSuppressed = true;
+            this.WebBrowser.Size = new System.Drawing.Size(786, 411);
+            this.WebBrowser.TabIndex = 0;
+            this.WebBrowser.Url = new System.Uri("https://www.kingjamesbibleonline.org/", System.UriKind.Absolute);
             // 
-            // toolStripStatusLabel1
+            // BibleLayout
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(179, 25);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.BibleLayout.AutoScroll = true;
+            this.BibleLayout.AutoSize = true;
+            this.BibleLayout.Controls.Add(this.Kjv_Label_BookTitle);
+            this.BibleLayout.Controls.Add(this.Kjv_Label_Chapter);
+            this.BibleLayout.Controls.Add(this.Kjv_Label_VerseText);
+            this.BibleLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BibleLayout.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.BibleLayout.Location = new System.Drawing.Point(3, 3);
+            this.BibleLayout.Name = "BibleLayout";
+            this.BibleLayout.Size = new System.Drawing.Size(786, 411);
+            this.BibleLayout.TabIndex = 0;
+            // 
+            // Kjv_Label_BookTitle
+            // 
+            this.Kjv_Label_BookTitle.AutoSize = true;
+            this.Kjv_Label_BookTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Kjv_Label_BookTitle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Kjv_Label_BookTitle.Location = new System.Drawing.Point(3, 0);
+            this.Kjv_Label_BookTitle.Name = "Kjv_Label_BookTitle";
+            this.Kjv_Label_BookTitle.Size = new System.Drawing.Size(119, 26);
+            this.Kjv_Label_BookTitle.TabIndex = 0;
+            this.Kjv_Label_BookTitle.Text = "Book Title";
+            // 
+            // Kjv_Label_Chapter
+            // 
+            this.Kjv_Label_Chapter.AutoSize = true;
+            this.Kjv_Label_Chapter.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Kjv_Label_Chapter.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Kjv_Label_Chapter.Location = new System.Drawing.Point(3, 26);
+            this.Kjv_Label_Chapter.Name = "Kjv_Label_Chapter";
+            this.Kjv_Label_Chapter.Size = new System.Drawing.Size(119, 20);
+            this.Kjv_Label_Chapter.TabIndex = 1;
+            this.Kjv_Label_Chapter.Text = "Chapter";
+            // 
+            // Kjv_Label_VerseText
+            // 
+            this.Kjv_Label_VerseText.AutoSize = true;
+            this.Kjv_Label_VerseText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Kjv_Label_VerseText.Location = new System.Drawing.Point(3, 46);
+            this.Kjv_Label_VerseText.Name = "Kjv_Label_VerseText";
+            this.Kjv_Label_VerseText.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
+            this.Kjv_Label_VerseText.Size = new System.Drawing.Size(119, 55);
+            this.Kjv_Label_VerseText.TabIndex = 2;
+            this.Kjv_Label_VerseText.Text = "Verse Text";
             // 
             // BibleBuddyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.AppWrapper);
+            this.Controls.Add(this.Menu);
+            this.HelpButton = true;
             this.Name = "BibleBuddyForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bible Buddy";
             this.Load += new System.EventHandler(this.BibleBuddyForm_Load);
-            this.AppWrapper.BottomToolStripPanel.ResumeLayout(false);
-            this.AppWrapper.BottomToolStripPanel.PerformLayout();
-            this.AppWrapper.ContentPanel.ResumeLayout(false);
-            this.AppWrapper.ResumeLayout(false);
-            this.AppWrapper.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.Menu.ResumeLayout(false);
+            this.KJV_Tab.ResumeLayout(false);
+            this.KJV_Tab.PerformLayout();
+            this.OnlineSearch_Tab.ResumeLayout(false);
+            this.BibleLayout.ResumeLayout(false);
+            this.BibleLayout.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ToolStripContainer AppWrapper;
-        private System.Windows.Forms.Panel Panel_View;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+
+        public System.Windows.Forms.TabControl Menu;
+        private System.Windows.Forms.TabPage KJV_Tab;
+        private System.Windows.Forms.TabPage Profile_Tab;
+        private System.Windows.Forms.TabPage OnlineSearch_Tab;
+        protected internal System.Windows.Forms.WebBrowser WebBrowser;
+        protected internal System.Windows.Forms.Label Kjv_Label_BookTitle;
+        protected internal System.Windows.Forms.Label Kjv_Label_Chapter;
+        protected internal System.Windows.Forms.Label Kjv_Label_VerseText;
+        protected internal System.Windows.Forms.FlowLayoutPanel BibleLayout;
     }
 }
 
